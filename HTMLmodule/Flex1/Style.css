@@ -1,0 +1,102 @@
+@font-face 
+{
+    font-family: 'Gilroy-Bold';
+    font-weight: 700px;
+    src: url('fonts/Jost-Bold.ttf')  format('truetype')
+}
+
+@font-face 
+{
+    font-family: 'Gilroy-Bold';
+    font-weight: 700px;
+    src: url('fonts/Jost-Medium.ttf')  format('truetype')
+}
+
+
+
+
+.div-center {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0px;
+    
+}
+
+.div-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    padding-bottom: 60px;
+    font-size: 50px;
+    font-family: 'Jost-Medium';
+}
+
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 360px;
+    background-color: #141024;
+    color: white;
+    border-radius: 20px;
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    width: 360px;
+    /* line-height: 32.5px; */
+    color: black;
+    border-radius: 20px;
+    border: 1px solid #9b99a2;
+    margin-top: 20px;
+}
+
+
+.head-in-column {
+    
+    padding-bottom: 83px;
+}
+
+.div-price {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Jost-Bold';
+}
+
+
+.div-description {
+    width: 250px;
+    height: 59px;
+    text-align: center;
+    padding-bottom: 52px;
+    font-size: 18px;
+    font-family: 'Jost-Medium';
+}
+
+button {
+    
+    width: 280px;
+    height: 79px;
+    /* padding: 25px, 54px, 25px, 54px; */
+    padding-bottom: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.div-button {
+    margin-bottom: -10px;
+    
+}

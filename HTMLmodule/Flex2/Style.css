@@ -1,0 +1,89 @@
+@font-face 
+{
+    font-family: 'PlayfairDisplay-Medium';
+    font-weight: 700px;
+    src: url('fonts/PlayfairDisplay-Medium.ttf')  format('truetype')
+}
+
+@font-face 
+{
+    font-family: 'PlusJakartaSans-Light';
+    font-weight: 700px;
+    src: url('fonts/PlusJakartaSans-Light.ttf')  format('truetype')
+}
+
+
+@font-face 
+{
+    font-family: 'PlayfairDisplay-Bold';
+    font-weight: 700px;
+    src: url('fonts/PlayfairDisplay-Bold.ttf')  format('truetype')
+}
+
+.div-main {
+    background-color: #F2F7FF;
+}
+
+.div-center {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 48px;
+    font-family: 'PlayfairDisplay-Medium';
+}
+
+.main-description {
+    width: 419.31px;
+    height: 291px;
+    padding-top: 174px;
+    
+}
+
+.div-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 545px;
+    height: 534px;
+    padding-top: 126px;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    height: 253px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+
+.header-item {
+    font-family: 'PlayfairDisplay-Bold';
+    font-size: 22px;
+    padding-bottom: 10px;
+    width: 181px;
+}
+
+.description-item {
+    font-family: 'PlusJakartaSans-Light';
+    font-size: 14px;
+    padding-bottom: 24px;
+}
+
+.div-img {
+    padding-bottom: 18px;
+}
+
+.groupping {
+    padding-left: 24px;
+    padding-right: 22px;
+    padding-top: 24px;
+}
+

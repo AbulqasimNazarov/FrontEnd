@@ -1,0 +1,132 @@
+@font-face 
+{
+    font-family: 'Gilroy-Bold';
+    font-weight: 700px;
+    src: url('fonts/Gilroy-Bold.ttf')  format('truetype')
+}
+
+@font-face 
+{
+    font-family: 'Gilroy-Medium';
+    font-weight: 500px;
+    src: url('fonts/Gilroy-Medium.ttf')  format('truetype')
+}
+
+
+
+.div-main {
+    background-color: #686DE0;
+    padding: 57px 0px 45px;
+    font-size: 0px;
+}
+
+.div-center {
+    width: 1660px;
+    margin: 0px auto;
+}
+
+.div-row1 {
+    color: #FFFFFF;
+    margin-bottom: 101px;
+}
+
+.div-row1:last-child
+{
+    margin-bottom: 0px;
+}
+
+.items-one {
+    
+    max-width: 930px;
+    max-height: 308px;
+    display: inline-block;
+    margin-right: 50px;
+    background-color: #2C2C54;
+}
+
+
+.items-one:last-child {
+    margin-right: 0px;
+}
+
+
+.div-img1 {
+    display: inline-block;
+    width: 365px;
+    height: 308px;
+}
+
+
+.item1 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 31px 35px 32px 30px;
+    width: 500px;
+    height: 245px;
+}
+
+.div-left {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'Gilroy-Bold';
+    font-size: 25px;
+    line-height: 32.5px;
+
+}
+
+.desc-left {
+    display: inline-block;
+    max-width: 591px;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 104.1px;
+
+}
+
+
+.div-right {
+    display: inline-block;
+    margin-bottom: 25px;
+    font-family: 'Gilroy-Bold';
+    font-size: 25px;
+    line-height: 32.5px;
+}
+
+.desc-right {
+    display: inline-block;
+    max-width: 591px;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+p {
+    margin: 0px;
+}
+
+.div-button {
+    display: inline-block;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #686DE0;
+}
+
+.items-second {
+    max-width: 680px;
+    max-height: 308px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+    background-color: #2C2C54;
+}
+
+.items-second:last-child {
+    margin-right: 0px;
+}
+
+.right {
+    padding: 47px 45px 47.52px 43.59px;
+}
