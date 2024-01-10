@@ -1,4 +1,5 @@
 var products = [
+
   { name: "Футболка", price: 20 },
   { name: "Шорты", price: 25 },
   { name: "Носки", price: 8 },
@@ -18,5 +19,6 @@ function calculateTotalCost(products) {
   
   const totalCost = calculateTotalCost(products);
   console.log("Общая стоимость товаров: $", totalCost);
+
 
 

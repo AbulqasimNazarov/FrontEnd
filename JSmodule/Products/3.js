@@ -1,4 +1,5 @@
 var products = [
+
   { id: 1, name: "Футболка", price: 20 },
   { id: 2, name: "Шорты", price: 25 },
   { id: 3, name: "Носки", price: 8 },
@@ -21,3 +22,4 @@ function totally(productsArr, purchasedArr){
 
 var totalBought = totally(products, purchasedItems);
 console.log("Totally Bought: $", totalBought);
+

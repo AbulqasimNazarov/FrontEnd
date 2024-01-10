@@ -5,8 +5,6 @@ var products = [
     { name: "Платье", price: 50 }
   ];
 
-
-
 function calculateTotalCostAndFilter(products, threshold) {
     let totalCost = 0;
     let expensiveProducts = products.filter(product => {
