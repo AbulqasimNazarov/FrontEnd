@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face 
+{
+    font-family: 'Raleway-Medium';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Raleway-Medium.ttf')  format('truetype')
+}
+
+.top-menu-item a {
+    text-decoration: none;
+}
+
+body a {
+    color: #2C2D35;
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+}
+
+.head {
+    background-color: #E1EDE6;
+}
+
+.head-inner {
+    width: 1110px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.head-logo-img {
+    padding-top: 38px;
+}
+
+
+.list-menu {
+    padding-top: 38px;
+}
+
+
+.top-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+  
+.top-menu-item {
+    margin-right: 58px;
+}
+  
+.top-menu-item:last-child {
+    margin-right: 0;
+}
+
+
+.first-block {
+    width: 1110px;
+    margin: 0 auto;
+    background-image: url(Assets/Layer\ 0\ 1.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 100%;
+    
+}
+
+.first-inner-block {
+    width: 1110px;
+    margin: 0 auto;
+    height: 620px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
