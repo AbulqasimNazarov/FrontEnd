@@ -19,6 +19,15 @@
     src: url('fonts/Raleway-ExtraLight.ttf')  format('truetype')
 }
 
+
+@font-face 
+{
+    font-family: 'Raleway-Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Raleway-Light.ttf')  format('truetype')
+}
+
 .top-menu-item a {
     text-decoration: none;
 }
@@ -164,7 +173,7 @@ button {
 }
 
 .sc-button {
-    margin-right: 32px;
+    
     font-size: 20px;
     border-radius: 20px;
     background-color: #D4E8D9;
@@ -177,10 +186,25 @@ button {
     text-align: center;
 }
 
+
+.div-sc-button {
+    margin-right: 32px;
+}
+
+.div-sc-button:last-child {
+    margin-right: 0px;
+}
+
+
 .sc-button:first-child {
     background-color: #376B44;
     color: #F4F6F5;
 }
+
+/* .sc-button:first-child {
+    background-color: #376B44;
+    color: #F4F6F5;
+} */
 
 .second-block-items {
     
@@ -251,11 +275,16 @@ button {
     margin-bottom: 30px;
 }
 
+
+
+
+
 .third-block {
     background-image: url(Assets/WhatsApp\ Image\ 2024-01-11\ at\ 00.03.26.jpeg);
     background-repeat: no-repeat;
     background-position: left 0px top 0%;
     background-size: cover;
+    background-attachment: scroll;
     margin-top: 70px;
 }
 
@@ -270,25 +299,32 @@ button {
     background-image: url(Assets/Star\ 2.png);
     background-repeat: no-repeat;
     background-position: left 0px top 0%;
-    width: 540px;
+    /* width: 540px; */
     color: #F4F6F5;
     font-family: 'Raleway-ExtraLight';
 }
 
 .third-block-head {
-    padding-left: 100px;
+    width: 421px;
+    /* padding-left: 100px; */
+    margin-left: 100px;
     font-size: 40px;
     margin-bottom: 20px;
     font-family: 'Raleway-Medium';
 }
 
 .th-bl-description1 {
+    width: 540px;
     font-size: 18px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .th-bl-description2 {
+    width: 540px;
     margin-bottom: 60px;
+    
+    font-size: 18px;
 }
 
 
@@ -298,4 +334,111 @@ button {
     padding: 21px 60px;
     margin-bottom: 70px;
     color: #2C2D35;
+    font-family: 'Raleway-Medium';
+}
+
+
+.fourth-block-inner {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.fth-block-item {
+    width: 635px;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 124px;
+}
+
+.fth-bl-head {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Raleway-Medium';
+}
+
+.fth-bl-description {
+    font-size: 18px;
+    font-family: 'Raleway-Medium';
+    margin-bottom: 20px;
+}
+
+.profile-images {
+    display: flex;
+}
+
+.profile-image {
+    margin-right: 30px;
+}
+
+
+.fifth-block {
+    background-color: #E1EDE6;
+}
+
+
+.fifth-block-inner {
+    width: 1110px;
+    margin: 0 auto;
+    
+}
+
+
+.fifth-first-column {
+    width: 170px;
+    display: inline-block;
+    margin-top: 23px;
+}
+
+.logo-image-fifth-bl {
+    margin-bottom: 41px;
+}
+
+.phone-fifth-bl {
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+    margin-bottom: 8px;
+}
+
+.description-first-column {
+    font-size: 18px;
+    color: #86928B;
+    font-family: 'Raleway-Light';
+    margin-bottom: 23px;
+}
+
+
+.fifth-second-column {
+    width: 445px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 23px;
+    margin-left: 115px;
+}
+
+
+.second-column-inner {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.head {
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+    margin-bottom: 6px;
+}
+
+.item {
+    color: #86928B;
+    font-size: 18px;
+    font-family: 'Raleway-Light';
+    margin-bottom: 6px;
+}
+
+.fifth-third-column {
+    display: inline-block;
 }
