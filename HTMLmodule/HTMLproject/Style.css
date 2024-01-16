@@ -155,12 +155,25 @@ button {
     
 }
 
-.sc-button {
+.sc-button1 {
     
     font-size: 20px;
     border-radius: 20px;
     background-color: #D4E8D9;
     color: #2C2D35;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sc-button {
+    
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #376B44;
+    color: #F4F6F5;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -178,10 +191,10 @@ button {
 }
 
 
-.sc-button:first-child {
+/* .sc-button:first-child {
     background-color: #376B44;
     color: #F4F6F5;
-}
+} */
 
 
 
@@ -293,14 +306,14 @@ button {
 }
 
 .th-bl-description1 {
-    width: 552px;
+    width: 540px;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 27px;
 }
 
 .th-bl-description2 {
-    width: 552px;
+    width: 540px;
     margin-bottom: 60px;
     line-height: 27px;
     font-size: 18px;
@@ -322,7 +335,14 @@ button {
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px;
-    display: flex;
+}
+
+
+.test-img {
+    width: 361px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 
 .fth-block-item {
@@ -331,6 +351,7 @@ button {
     padding: 0;
     margin-left: 30px;
     margin-top: 124px;
+    display: inline-block;
 }
 
 .fth-bl-head {
@@ -345,11 +366,10 @@ button {
     margin-bottom: 20px;
 }
 
-.profile-images {
-    display: flex;
-}
+
 
 .profile-image {
+    display: inline-block;
     margin-right: 30px;
 }
 
