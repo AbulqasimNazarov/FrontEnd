@@ -109,10 +109,8 @@ button {
 }
 
 .first-block-button {
-    margin-top: 60px;
-    
+    margin-top: 60px; 
     width: 225px;
-    /* display: inline-block; */
     border: 2px solid #598D66;
     padding: 20px 60px;
 }
@@ -190,11 +188,6 @@ button {
     margin-right: 0px;
 }
 
-
-/* .sc-button:first-child {
-    background-color: #376B44;
-    color: #F4F6F5;
-} */
 
 
 
@@ -291,29 +284,30 @@ button {
     background-image: url(Assets/Star\ 2.png);
     background-repeat: no-repeat;
     background-position: left 0px top 0%;
-    /* width: 540px; */
+    width: 540px;
     color: #F4F6F5;
-    
+   
 }
 
 .third-block-head {
     width: 421px;
-    /* padding-left: 100px; */
     margin-left: 100px;
     font-size: 40px;
-    margin-bottom: 20px;
-    
+    line-height: 40px;
+    margin-bottom: 20px;    
 }
 
 .th-bl-description1 {
-    width: 540px;
+    /* width: 540px; */
+    font-style: normal;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 27px;
 }
 
 .th-bl-description2 {
-    width: 540px;
+    /* width: 540px; */
+    font-style: normal;
     margin-bottom: 60px;
     line-height: 27px;
     font-size: 18px;
@@ -340,24 +334,25 @@ button {
 
 .test-img {
     width: 361px;
-    padding: 0;
-    margin: 0;
     display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 30px;
 }
 
 .fth-block-item {
     width: 635px;
-    margin: 0;
-    padding: 0;
-    margin-left: 30px;
     margin-top: 124px;
     display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    
 }
 
 .fth-bl-head {
     font-size: 40px;
     margin-bottom: 20px;
-    
+    line-height: 44px;
 }
 
 .fth-bl-description {
@@ -410,14 +405,14 @@ button {
 
 .phone-fifth-bl {
     font-size: 20px;
-    line-height: 23.48px;
+    line-height: normal;
     margin-bottom: 8px;
 }
 
 .description-first-column {
     font-size: 18px;
     color: #86928B;
-    line-height: 21.13px;
+    line-height: normal;
 }
 
 
@@ -437,14 +432,14 @@ button {
 .head {
     font-size: 20px;
     color: #2C2D35;
-    line-height: 23.48px;
-    padding-top: 3px;
+    line-height: normal;
+    
 }
 
 .footer-menu-item a {
     font-size: 18px;
     color: #86928B;
-    
+    line-height: 27px;
 }
 
 
@@ -452,8 +447,8 @@ button {
 .footer-menu-item {
     margin-bottom: 6px;
     margin-top: 6px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 
