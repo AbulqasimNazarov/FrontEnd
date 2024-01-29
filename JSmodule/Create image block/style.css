@@ -5,3 +5,15 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.img-block {
+    max-height: 450px;
+    max-width: 250px;
+    overflow: hidden;
+  }
+  
+  .img-block img {
+    width: 100%;
+    height: auto;
+    display: block; 
+  }
