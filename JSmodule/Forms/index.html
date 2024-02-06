@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form method="post" name="signUp">
+        <div>Name: <input type="text" id="name" class="input" name="name"></div>
+        <span id="firstNameError" class="error"></span><br>
+        <div>Surname: <input type="text" id="surname" class="input" name="surname"></div>
+        <span id="lastNameError" class="error"></span><br>
+        <div>Gender:</div>
+        <div><input type="radio" id="maleGender" name="gender">Male</div>
+        <div><input type="radio" id="femaleGender" name="gender">Female</div>
+        <div class="militaryQuestion"><input type="checkbox" name="militaryServe">Проходили ли вы военную службу?</div>
+        <div class="armyQuestion">где служил?
+            <select name="selectMilitary">
+            <option value="Army">Army</option>
+            <option value="Air Force">Air Force</option>
+        </select></div>
+        <div>Age: <input type="text" id="age" class="input" name="age"></div>
+        <div class="additionalQuestions" style="display: none;">
+            <div>Курите ли вы сигареты? <input type="checkbox" name="smoke"></div>
+            <div class="cigaretteBrand" style="display: none;">
+                Название сигарет: <input type="text" id="cigaretteBrand" class="input" name="cigaretteBrand">
+            </div>
+            <div id="cigaretteBrandError" class="error"></div>
+        </div>
+        <span id="ageError" class="error"></span>
+        <div>Email: <input type="text" id="email" class="input" name="email"></div>
+        <div id="emailError" class="error"></div>
+        <button name="btn">OK</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
