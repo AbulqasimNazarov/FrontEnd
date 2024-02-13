@@ -1,0 +1,38 @@
+
+.header {
+    
+    background-color: rgb(152, 178, 197);
+}
+.inner-header {
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+body {
+    font-size: 25px;
+}
+
+.h-recycle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.inner-products {
+    margin: 0 auto;
+    width: 700px;
+}
+
+
+.products-header {
+    font-size: 20px;
+    color: blueviolet;
+}
