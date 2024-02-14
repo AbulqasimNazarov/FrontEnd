@@ -6,6 +6,8 @@ const ROOT_LOADER = document.getElementById('root-loader')
 const ROOT_ERROR = document.getElementById('root-error')
 
 
+ROOT_STORE_CARD.style.display = 'none';
+
 class LocalStorageUtil {
     keyName;
 
@@ -44,8 +46,15 @@ const localStorageUtil = new LocalStorageUtil();
 class StoreCard {
     constructor() {}
 
+    toggleVisibility() {
+        if (ROOT_STORE_CARD) {
+            ROOT_STORE_CARD.style.display = (ROOT_STORE_CARD.style.display === 'none') ? 'block' : 'none';
+        } else {
+            console.error("ROOT_STORE_CARD element not found.");
+        }
+    }
     handlerClear() {
-        //const ROOT_STORE_CARD = document.getElementById('ROOT_STORE_CARD');
+        
         if (ROOT_STORE_CARD) {
             ROOT_STORE_CARD.innerHTML = '';
         } else {
@@ -61,7 +70,7 @@ class StoreCard {
         let sumCatalog = 0;
 
         for (const product of products) {
-            htmlCatalog += `<div>${product.name} - ${product.price}</div>`;
+            htmlCatalog += `<div>${product.title} - ${product.price}</div>`;
             sumCatalog += product.price;
         }
 
@@ -82,21 +91,66 @@ class StoreCard {
 }
 
 
+class Header {
+    constructor(storeCard) {
+        this.storeCard = storeCard;
+    }
+
+    handlerOpenStoreCardPage() {
+        this.storeCard.toggleVisibility();
+        this.storeCard.render();
+    }
+
+    render(count) {
+        const html = `
+            <div>Product Count: ${count}</div>
+            <button type="button" onclick="headerPage.handlerOpenStoreCardPage()">Open Store Card</button>
+        `;
+
+        if (ROOT_HEADER) {
+            ROOT_HEADER.innerHTML = html;
+        } else {
+            console.error("ROOT_HEADER element not found.");
+        }
+    }
+}
+
+// class Header {
+//     constructor(storeCard) {
+//         this.storeCard = storeCard;
+//     }
 
 
+    
+//     handlerOpenStoreCardPage() {
+//         this.storeCard.toggleVisibility();
+//         this.storeCard.render();
+//     }
 
+//     render(count) {
+//         const html = `
+//             <div>Product Count: ${count}</div>
+//             <button type="button" onclick="header.handlerOpenStoreCardPage()">Open Store Card</button>
+//         `;
+
+        
+//         if (ROOT_HEADER) {
+//             ROOT_HEADER.innerHTML = html;
+//         } else {
+//             console.error("ROOT_HEADER element not found.");
+//         }
+//     }
+// }
 
 class Products {
     constructor() {
         this.classNameActive = 'active';
-        this.labelAdd = 'Добавить в корзину';
-        this.labelRemove = 'Удалить из корзины';
+        this.labelAdd = 'Add to Cart';
+        this.labelRemove = 'Remove from Cart';
     }
 
     handlerSetLocalStorage(element, id) {
-        
         localStorageUtil.putProducts(id);
-
         const productsStore = localStorageUtil.getProducts();
         headerPage.render(productsStore.length);
 
@@ -110,7 +164,6 @@ class Products {
     }
 
     render() {
-        
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
 
@@ -121,13 +174,12 @@ class Products {
 
             htmlCatalog += `
                 <div>
-                    <span>${product.name} - ${product.price}</span>
+                    <span>${product.title} - ${product.price}</span>
                     <button class="${buttonClass}" onclick="productsPage.handlerSetLocalStorage(this, ${product.id})">${buttonText}</button>
                 </div>
             `;
         }
 
-        
         if (ROOT_PRODUCTS) {
             ROOT_PRODUCTS.innerHTML = htmlCatalog;
         } else {
@@ -136,33 +188,62 @@ class Products {
     }
 }
 
+
+// class Products {
+//     constructor() {
+//         this.classNameActive = 'active';
+//         this.labelAdd = 'Добавить в корзину';
+//         this.labelRemove = 'Удалить из корзины';
+//     }
+
+//     handlerSetLocalStorage(element, id) {
+        
+//         localStorageUtil.putProducts(id);
+
+//         const productsStore = localStorageUtil.getProducts();
+//         headerPage.render(productsStore.length);
+
+//         if (element.classList.contains(this.classNameActive)) {
+//             element.innerHTML = this.labelAdd;
+//             element.classList.remove(this.classNameActive);
+//         } else {
+//             element.innerHTML = this.labelRemove;
+//             element.classList.add(this.classNameActive);
+//         }
+//     }
+
+//     render() {
+        
+//         const productsStore = localStorageUtil.getProducts();
+//         let htmlCatalog = '';
+
+//         for (const product of CATALOG) {
+//             const isActive = productsStore.some(p => p.id === product.id);
+//             const buttonText = isActive ? this.labelRemove : this.labelAdd;
+//             const buttonClass = isActive ? this.classNameActive : '';
+
+//             htmlCatalog += `
+//                 <div>
+//                     <span>${product.title} - ${product.price}</span>
+//                     <button class="${buttonClass}" onclick="productsPage.handlerSetLocalStorage(this, ${product.id})">${buttonText}</button>
+//                 </div>
+//             `;
+//         }
+
+        
+//         if (ROOT_PRODUCTS) {
+//             ROOT_PRODUCTS.innerHTML = htmlCatalog;
+//         } else {
+//             console.error("ROOT_PRODUCTS element not found.");
+//         }
+//     }
+// }
+
 const productsPage = new Products();
 
 
 
-class Header {
-    constructor(storeCard) {
-        this.storeCard = storeCard;
-    }
 
-    handlerOpenStoreCardPage() {
-        this.storeCard.render();
-    }
-
-    render(count) {
-        const html = `
-            <div>Product Count: ${count}</div>
-            <button onclick="header.handlerOpenStoreCardPage()">Open Store Card</button>
-        `;
-
-        
-        if (ROOT_HEADER) {
-            ROOT_HEADER.innerHTML = html;
-        } else {
-            console.error("ROOT_HEADER element not found.");
-        }
-    }
-}
 
 class LoaderPage {
     constructor() {}
@@ -176,18 +257,20 @@ class LoaderPage {
     }
 }
 
+
+const storePage = new StoreCard();
 const loaderPage = new LoaderPage();
-const headerPage = new Header();
+const headerPage = new Header(storePage);
 
 
 
-function render() {
-    const localStorageUtil = new LocalStorageUtil();
-    const productsStore = localStorageUtil.getProducts();
+// function render() {
+//     const localStorageUtil = new LocalStorageUtil();
+//     const productsStore = localStorageUtil.getProducts();
 
-    headerPage.render(productsStore.length);
-    productsPage.render();
-}
+//     headerPage.render(productsStore.length);
+//     productsPage.render();
+// }
 
 function loadData() {
     fetch('https://dummyjson.com/products')
@@ -208,9 +291,19 @@ function loadData() {
         });
 }
 
+// loaderPage.render();
+
+// let CATALOG = [];
+
+// loadData();
+
+function render() {
+    const productsStore = localStorageUtil.getProducts();
+    headerPage.render(productsStore.length);
+    productsPage.render();
+}
+
 loaderPage.render();
-
 let CATALOG = [];
-
 loadData();
 
