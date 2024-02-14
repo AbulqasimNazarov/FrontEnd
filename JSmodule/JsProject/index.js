@@ -1,3 +1,4 @@
+let CATALOG = [];
 
 const ROOT_HEADER = document.getElementById('root-header');
 const ROOT_PRODUCTS = document.getElementById('root-products');
@@ -62,32 +63,35 @@ class StoreCard {
         }
     }
 
-    render() {
-        
-        const products = localStorageUtil.getProducts();
 
+    render() {
+        const productsFromStorage = localStorageUtil.getProducts();
         let htmlCatalog = '';
         let sumCatalog = 0;
-
-        for (const product of products) {
-            htmlCatalog += `<div>${product.title} - ${product.price}</div>`;
-            sumCatalog += product.price;
+    
+        for (const productFromStorage of productsFromStorage) {
+            const product = CATALOG.find(product => product.id === productFromStorage.id);
+            if (product) {
+                htmlCatalog += `<div>${product.title} - ${product.price}$</div>`;
+                sumCatalog += product.price;
+            }
         }
-
+    
         const html = `
             <table>
                 ${htmlCatalog}
             </table>
-            <div>Total: ${sumCatalog}</div>
+            <div>Total: ${sumCatalog}$</div>
         `;
-
-        
+    
         if (ROOT_STORE_CARD) {
             ROOT_STORE_CARD.innerHTML = html;
         } else {
             console.error("ROOT_STORE_CARD element not found.");
         }
     }
+    
+
 }
 
 
@@ -115,32 +119,7 @@ class Header {
     }
 }
 
-// class Header {
-//     constructor(storeCard) {
-//         this.storeCard = storeCard;
-//     }
 
-
-    
-//     handlerOpenStoreCardPage() {
-//         this.storeCard.toggleVisibility();
-//         this.storeCard.render();
-//     }
-
-//     render(count) {
-//         const html = `
-//             <div>Product Count: ${count}</div>
-//             <button type="button" onclick="header.handlerOpenStoreCardPage()">Open Store Card</button>
-//         `;
-
-        
-//         if (ROOT_HEADER) {
-//             ROOT_HEADER.innerHTML = html;
-//         } else {
-//             console.error("ROOT_HEADER element not found.");
-//         }
-//     }
-// }
 
 class Products {
     constructor() {
@@ -174,7 +153,7 @@ class Products {
 
             htmlCatalog += `
                 <div>
-                    <span>${product.title} - ${product.price}</span>
+                    <span>${product.title} - ${product.price}$</span>
                     <button class="${buttonClass}" onclick="productsPage.handlerSetLocalStorage(this, ${product.id})">${buttonText}</button>
                 </div>
             `;
@@ -189,59 +168,7 @@ class Products {
 }
 
 
-// class Products {
-//     constructor() {
-//         this.classNameActive = 'active';
-//         this.labelAdd = 'Добавить в корзину';
-//         this.labelRemove = 'Удалить из корзины';
-//     }
-
-//     handlerSetLocalStorage(element, id) {
-        
-//         localStorageUtil.putProducts(id);
-
-//         const productsStore = localStorageUtil.getProducts();
-//         headerPage.render(productsStore.length);
-
-//         if (element.classList.contains(this.classNameActive)) {
-//             element.innerHTML = this.labelAdd;
-//             element.classList.remove(this.classNameActive);
-//         } else {
-//             element.innerHTML = this.labelRemove;
-//             element.classList.add(this.classNameActive);
-//         }
-//     }
-
-//     render() {
-        
-//         const productsStore = localStorageUtil.getProducts();
-//         let htmlCatalog = '';
-
-//         for (const product of CATALOG) {
-//             const isActive = productsStore.some(p => p.id === product.id);
-//             const buttonText = isActive ? this.labelRemove : this.labelAdd;
-//             const buttonClass = isActive ? this.classNameActive : '';
-
-//             htmlCatalog += `
-//                 <div>
-//                     <span>${product.title} - ${product.price}</span>
-//                     <button class="${buttonClass}" onclick="productsPage.handlerSetLocalStorage(this, ${product.id})">${buttonText}</button>
-//                 </div>
-//             `;
-//         }
-
-        
-//         if (ROOT_PRODUCTS) {
-//             ROOT_PRODUCTS.innerHTML = htmlCatalog;
-//         } else {
-//             console.error("ROOT_PRODUCTS element not found.");
-//         }
-//     }
-// }
-
 const productsPage = new Products();
-
-
 
 
 
@@ -264,14 +191,6 @@ const headerPage = new Header(storePage);
 
 
 
-// function render() {
-//     const localStorageUtil = new LocalStorageUtil();
-//     const productsStore = localStorageUtil.getProducts();
-
-//     headerPage.render(productsStore.length);
-//     productsPage.render();
-// }
-
 function loadData() {
     fetch('https://dummyjson.com/products')
         .then(res => res.json())
@@ -291,12 +210,6 @@ function loadData() {
         });
 }
 
-// loaderPage.render();
-
-// let CATALOG = [];
-
-// loadData();
-
 function render() {
     const productsStore = localStorageUtil.getProducts();
     headerPage.render(productsStore.length);
@@ -304,6 +217,4 @@ function render() {
 }
 
 loaderPage.render();
-let CATALOG = [];
 loadData();
-

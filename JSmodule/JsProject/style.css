@@ -29,10 +29,16 @@ a {
 .inner-products {
     margin: 0 auto;
     width: 700px;
+    background-color: rgb(193, 188, 198);
 }
 
 
 .products-header {
     font-size: 20px;
     color: blueviolet;
+}
+
+
+.recycle {
+    background-color: yellow;
 }
