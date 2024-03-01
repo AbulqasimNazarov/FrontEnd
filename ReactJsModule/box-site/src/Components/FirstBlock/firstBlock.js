@@ -2,9 +2,9 @@ import React from "react";
 
 
 
-import './firstPartStyle.scss'
+import './firstBlockStyle.scss'
 
-export const FirstPart = () => {
+export const FirstBlock = () => {
     return (
         <div className="background-picture">
             <div className="first-block-inner">

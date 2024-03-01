@@ -1,0 +1,16 @@
+@font-face 
+{
+    font-family: 'WorkSans-Bold';
+    font-weight: 700px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Bold.ttf')  format('truetype')
+}
+
+
+.reputation-text {
+    width: 271px;
+    margin: 0 auto;
+    font-family: 'WorkSans-Bold';
+    font-size: 36px;
+    padding-top: 60px;
+}
