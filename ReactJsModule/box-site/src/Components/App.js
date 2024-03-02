@@ -1,9 +1,10 @@
 import React from "react";
-import { Header } from "./Header/header.js";
-import { FirstBlock } from "./FirstBlock/firstBlock.js";
-import { SecondBlock } from "./SecondBlock/secondBlock.js";
+import { Header } from "./Header/header.jsx";
+import { FirstBlock } from "./FirstBlock/firstBlock.jsx";
+import { SecondBlock } from "./SecondBlock/secondBlock.jsx";
 import { ThirdBlock } from "./ThirdBlock/thirdBlock.jsx";
 import { FourthBlock } from "./FourthBlock/fourthBlock.jsx";
+import { FifthBlock } from "./FifthBlock/fifthBlock.jsx";
 
 
 
@@ -15,6 +16,7 @@ export const App = () => {
       <SecondBlock />
       <ThirdBlock />
       <FourthBlock />
+      <FifthBlock />
     </div>
     
   )

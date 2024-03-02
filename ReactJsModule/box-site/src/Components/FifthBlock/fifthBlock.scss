@@ -1,0 +1,60 @@
+@font-face 
+{
+    font-family: 'WorkSans-Bold';
+    font-weight: 700px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Bold.ttf')  format('truetype')
+}
+
+
+
+@font-face 
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+
+.fifth-block {
+    
+    background-image: url("../../Assets/IMG/FifthBlockIMG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+.fifth-block-inner {
+    width: 1216px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.fifth-block-description {
+    font-family: 'WorkSans-Bold';
+    font-size: 36px;
+    color: #FFFFFF;
+    
+    margin-bottom: 30px;
+}
+
+
+.fifthblock-number {
+    font-family: 'Work-Sans';
+    color: #FFFFFF;
+    font-size: 24px;
+    
+    display: inline-block;
+}
+
+.number {
+    border-bottom: 1px solid white;
+}
