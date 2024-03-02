@@ -4,9 +4,9 @@ import './secondBlockItemStyle.scss'
 export const SecondBlockItem = ({icon, head, description}) => {
     return (
         <div className="second-block-item">
-            <div><img src={icon}/></div>
-            <div>{head}</div>
-            <div>{description}</div>
+            <div className="icon-div"><img src={icon}/></div>
+            <div className="head-div">{head}</div>
+            <div className="description-div">{description}</div>
 
         </div>
     )

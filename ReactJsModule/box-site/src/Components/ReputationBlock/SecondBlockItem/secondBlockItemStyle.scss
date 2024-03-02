@@ -1,4 +1,39 @@
+@font-face 
+{
+    font-family: 'WorkSans-Bold';
+    font-weight: 700px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-Bold.ttf')  format('truetype');
+}
+
+
+@font-face 
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+
 .second-block-item {
     width: 292px;
     border: 1.4px solid #E0E3EB;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+
+.head-div {
+    margin-top: 20px;
+    font-family: 'WorkSans-Bold';
+    font-size: 20px;
+    color: #3D445C;
+}
+
+.description-div {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #858EAD;
+    font-family: 'Work-Sans';
 }

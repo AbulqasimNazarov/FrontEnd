@@ -1,16 +1,16 @@
 
 @font-face 
 {
-    font-family: 'WorkSans-SemiBold';
-    font-weight: 600px;
+    font-family: 'Work-Sans';
+    font-weight: 400px;
     font-style: normal;
-    src: url('../../Assets/Fonts/WorkSans-SemiBold.ttf')  format('truetype')
+    src: url('../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
 }
-
 
 .header-parent {
     width: 1216px;
     margin: 0 auto;
+    font-family: 'Work-Sans';
     padding-top: 16px;
     padding-bottom: 16.5px;
     display: flex;
@@ -18,18 +18,3 @@
 }
 
 
-.first-block-inner {
-    width: 1216px;
-    
-    margin: 0 auto;
-    
-}
-
-
-.fisrt-block-description {
-    width: 556px;
-    padding-top: 239px;
-    padding-bottom: 239px;
-    font-size: 72px;
-    font-family: 'WorkSans-SemiBold';
-}

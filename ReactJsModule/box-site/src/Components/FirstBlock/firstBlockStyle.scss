@@ -1,3 +1,10 @@
+@font-face 
+{
+    font-family: 'WorkSans-SemiBold';
+    font-weight: 600px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-SemiBold.ttf')  format('truetype')
+}
 
 
 
@@ -8,4 +15,26 @@
     
     background-size: cover;
     background-attachment: scroll;
+}
+
+.fisrt-block-description {
+    color: #292E3D;
+}
+
+
+
+.first-block-inner {
+    width: 1216px;
+    
+    margin: 0 auto;
+    
+}
+
+
+.fisrt-block-description {
+    width: 556px;
+    padding-top: 239px;
+    padding-bottom: 239px;
+    font-size: 72px;
+    font-family: 'WorkSans-SemiBold';
 }
