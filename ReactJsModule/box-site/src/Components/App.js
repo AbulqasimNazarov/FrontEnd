@@ -3,7 +3,9 @@ import { Header } from "./Header/header.js";
 import { FirstBlock } from "./FirstBlock/firstBlock.js";
 import { SecondBlock } from "./SecondBlock/secondBlock.js";
 import { ThirdBlock } from "./ThirdBlock/thirdBlock.jsx";
-import "./style.scss"
+import { FourthBlock } from "./FourthBlock/fourthBlock.jsx";
+
+
 
 export const App = () => {
   return (
@@ -12,6 +14,7 @@ export const App = () => {
       <FirstBlock />
       <SecondBlock />
       <ThirdBlock />
+      <FourthBlock />
     </div>
     
   )
