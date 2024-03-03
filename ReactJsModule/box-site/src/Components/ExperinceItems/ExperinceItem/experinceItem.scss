@@ -1,0 +1,50 @@
+
+@font-face
+{
+    font-family: 'WorkSans-SemiBold';
+    font-weight: 600px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-SemiBold.ttf')  format('truetype')
+}
+
+
+@font-face
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+.description-icon {
+    display: flex;
+    margin-left: 30px;
+}
+
+.description-experience {
+    margin-left: 12px;
+    font-family: 'Work-Sans';
+    font-size: 24px;
+    color: #667299;
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+
+.number-experience {
+    color: #292E3D;
+    font-size: 72px;
+    font-family: 'WorkSans-SemiBold';
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+
+.number-icon{
+    display: flex;
+    // padding-top: 30px;
+}
+
+
+.line-horizont {
+    padding-left: 16px;
+}

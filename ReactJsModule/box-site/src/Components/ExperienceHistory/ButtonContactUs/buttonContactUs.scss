@@ -1,0 +1,17 @@
+@font-face 
+{
+    font-family: 'WorkSans-SemiBold';
+    font-weight: 600px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-SemiBold.ttf')  format('truetype')
+}
+
+
+.button-contact-us {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #2947A9;
+    border-radius: 2px;
+    padding: 16px 39px 16px 39px;
+}
