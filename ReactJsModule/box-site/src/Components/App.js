@@ -7,6 +7,8 @@ import { FourthBlock } from "./FourthBlock/fourthBlock.jsx";
 import { FifthBlock } from "./FifthBlock/fifthBlock.jsx";
 import { SixthBlock } from "./SixthBlock/sixthBlock.jsx";
 import { SeventhBlock } from "./SeventhBlock/seventhBlock.jsx";
+import { EighthBlock } from "./EighthBlock/eighthBlock.jsx";
+import { Footer } from "./Footer/footer.jsx";
 
 
 
@@ -21,6 +23,8 @@ export const App = () => {
       <FifthBlock />
       <SixthBlock />
       <SeventhBlock />
+      <EighthBlock />
+      <Footer />
     </div>
     
   )

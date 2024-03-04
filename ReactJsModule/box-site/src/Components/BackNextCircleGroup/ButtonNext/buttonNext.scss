@@ -1,0 +1,26 @@
+@font-face 
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+
+.next-button {
+    background-color: #292E3D;
+    display: flex;
+    padding: 21.5px 109px 21.5px 109px;
+}
+
+.button-text-next {
+    font-family: 'Work-Sans';
+    font-size: 18px;
+    color: #FFFFFF; 
+    margin-right: 10px;  
+}
+
+.img-strelka2 {
+    margin-top: 7px;
+}
+

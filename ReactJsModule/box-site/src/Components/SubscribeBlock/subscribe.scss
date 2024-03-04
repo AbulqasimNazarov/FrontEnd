@@ -1,0 +1,53 @@
+@font-face 
+{
+    font-family: 'WorkSans-Medium';
+    font-weight: 500px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Medium.ttf')  format('truetype')
+}
+
+
+@font-face 
+{
+    font-family: 'WorkSans-SemiBold';
+    font-weight: 600px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-SemiBold.ttf')  format('truetype')
+}
+
+.sub-head {
+    font-family: 'WorkSans-Medium';
+    font-size: 20px;
+    color: #2947A9;
+}
+
+.sub-input {
+    width: 280px;
+    font-family: 'Work-Sans';
+    font-size: 18px;
+    color: #E0E3EB;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.sub-input::placeholder {
+    color: 
+    #A3AAC2;
+}
+
+.input-button {
+    margin-top: 20px;
+}
+
+.btn-subscribe {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 18px;
+    background-color: #F9995D;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px 23.5px 10px 23.5px;
+}

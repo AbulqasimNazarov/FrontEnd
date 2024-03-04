@@ -1,0 +1,28 @@
+@font-face 
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+
+.back-button {
+    
+    background-color: #292E3D;
+    display: flex;
+    padding: 21.5px 108px 21.5px 108px;
+    
+}
+
+
+.button-text-back {
+    font-family: 'Work-Sans';
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.img-strelka1 {
+    margin-top: 7px;
+}

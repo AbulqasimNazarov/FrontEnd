@@ -1,0 +1,96 @@
+@font-face 
+{
+    font-family: 'WorkSans-Medium';
+    font-weight: 500px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Medium.ttf')  format('truetype')
+}
+
+
+@font-face 
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+
+.footer-inner {
+    width: 1216px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 79.5px;
+    
+}
+
+.span-address {
+    font-family: 'WorkSans-Medium';
+    font-size: 20px;
+    color: #2947A9;
+    margin-right: 13px;
+}
+
+.span-phone {
+    font-family: 'WorkSans-Medium';
+    font-size: 20px;
+    color: #2947A9;
+    margin-right: 35px;
+}
+
+.span-email {
+    font-family: 'WorkSans-Medium';
+    font-size: 20px;
+    color: #2947A9;
+    margin-right: 45px;
+}
+
+.spans2 {
+    font-family: 'Work-Sans';
+    font-size: 20px;
+    color: #292E3D;
+}
+
+.phone-div {
+    margin-top: 32px;
+}
+
+.email-div {
+    margin-top: 32px;
+}
+
+.logo-div {
+    margin-top: 32px;
+}
+
+.logos {
+    width: 161.6px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-text {
+    font-family: 'WorkSans-Medium';
+    font-size: 20px;
+    color: #2947A9;
+    margin-top: 42px;
+}
+
+.under-footer {
+    background-color: #2947A9;
+}
+
+
+.under-footer-inner {
+    width: 1216px;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    font-family: 'Work-Sans';
+    
+    color: white;
+    font-size: 16px;
+}
