@@ -1,0 +1,51 @@
+
+@font-face 
+{
+    font-family: 'WorkSans-Bold';
+    font-weight: 700px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Bold.ttf')  format('truetype')
+}
+
+
+@font-face 
+{
+    font-family: 'Work-Sans';
+    font-weight: 400px;
+    font-style: normal;
+    src: url('../../Assets/Fonts/WorkSans-Regular.ttf')  format('truetype')
+}
+
+
+.item-project {
+    width: 384px;
+    margin: 0 auto;
+    margin-top: 32px;
+
+}
+
+
+
+.under-image {
+    background-color: #2947A9;
+    margin-top: -5px;
+}
+
+
+.item-project-head {
+    font-family: 'WorkSans-Bold';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 12px;
+    padding-top: 12px;
+}
+
+
+.item-project-description {
+    font-family: 'Work-Sans';
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 16px
+}
